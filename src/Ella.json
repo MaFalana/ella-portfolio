@@ -1,0 +1,204 @@
+{
+"Employment": [
+    {
+        "title": "Masters Level Specialist",
+        "company": "Centerstone Community Mental Health",
+        "location": "Martinsville, IN",
+        "startDate": "August 2025",
+        "endDate": "Present",
+        "alignment": "flex-start"
+    },
+    {
+        "title": "Art Therapy Intern",
+        "company": "IU Health Methodist Hospital",
+        "location": "Indianapolis, IN",
+        "startDate": "August 2024",
+        "endDate": "May 2025",
+        "alignment": "flex-end"
+    },
+    {
+        "title": "Art Therapy Intern",
+        "company": "Centerstone Community Mental Health",
+        "location": "Martinsville, IN",
+        "startDate": "August 2023",
+        "endDate": "May 2024",
+        "alignment": "flex-start"
+    },
+    {
+        "title": "University Teaching Assistant",
+        "company": "Indiana University Psychology Department",
+        "location": "Bloomington, IN",
+        "startDate": "August 2021",
+        "endDate": "May 2023",
+        "alignment": "flex-end"
+    }
+],
+
+"Education": [   
+    {
+      "institution": "Indiana University Indianapolis",
+      "degree": "Master of Arts - MA, Art Therapy/Therapist",
+      "startDate": "August 2023",
+      "endDate": "May 2025"
+    },
+    {
+      "institution": "Indiana University Bloomington",
+      "degree": "Psychology, Substance Abuse/Addiction Counseling",
+      "startDate": "August 2019",
+      "endDate": "May 2023"
+    }
+  ],
+
+"Art": [
+    {
+        "id": "1",
+        "title": "Neurotic",
+        "description": "",
+        "height": 600,
+        "medium": "Printmaking",
+        "url": "",
+        "img": "/assets/Neurotic.jpeg"
+    },
+    {
+        "id": "2",
+        "title": "Utopia?",
+        "height": 800,
+        "description": "",
+        "medium": "Printmaking",
+        "url": "",
+        "img": "/assets/Utopia.jpeg"
+    },
+    {
+        "id": "3",
+        "title": "",
+        "description": "",
+        "height": 900,
+        "medium": "Drawing",
+        "url": "",
+        "img": "/assets/IMG_7257.jpeg"
+    },
+    {
+        "id": "4",
+        "title": "Mind Control",
+        "description": "",
+        "height": 925,
+        "medium": "Printmaking",
+        "url": "",
+        "img": "/assets/Mind%20Control.jpeg"
+    },
+    {
+      "id": "5",
+      "title":"",
+      "description": "",
+      "height": 450,
+      "medium": "Jewelry",
+      "url": "",
+      "img": "/assets/images/4A341E3C-423F-4CA9-9CCE-CC3AD84E1B0A.jpeg"
+    },
+    {
+      "id": "6",
+      "title":"",
+      "description": "",
+      "height": 800,
+      "medium": "Jewelry",
+      "url": "",
+      "img": "/assets/images/4FE14E13-2386-4B85-9740-53AE6BEF76F6.jpeg"
+    },
+    {
+      "id": "7",
+      "title":"",
+      "description": "",
+      "height": 500,
+      "medium": "Clothing",
+      "url": "",
+      "img": "/assets/images/05B319EC-22D7-4AC8-BBA9-271360EACD6C_4_5005_c.jpeg"
+    },
+    {
+      "id": "8",
+      "title":"",
+      "description": "",
+      "height": 750,
+      "medium": "Jewelry",
+      "url": "",
+      "img": "/assets/images/31F4768A-7D5E-4A9F-847F-7D7268950344.jpeg"
+    },
+    {
+      "id": "9",
+      "title":"",
+      "description": "",
+      "height": 900,
+      "medium": "Clothing",
+      "url": "",
+      "img": "/assets/images/56B875B1-0122-4AB8-B72E-35A41A8B83BA_4_5005_c.jpeg"
+    },
+    {
+      "id": "10",
+      "title":"",
+      "description": "",
+      "height": 500,
+      "medium": "Ceramics",
+      "url": "",
+      "img": "/assets/images/097F305D-F5B4-4E6D-9CA8-61C429F36E2A.jpeg"
+    },
+    {
+      "id": "11",
+      "title":"",
+      "description": "",
+      "height":900,
+      "medium": "Painting",
+      "url": "",
+      "img": "/assets/images/501DFE30-3782-4608-8DE9-E34005A8ACBB.heic"
+    },
+    {
+      "id": "12",
+      "title":"Day Dreaming",
+      "description": "",
+      "height": 450,
+      "width": 1600,
+      "medium": "Printmaking",
+      "url": "",
+      "img": "/assets/images/D7333832-4DF0-4261-B6FF-50AC8BD68432.heic"
+    },
+    {
+      "id": "13",
+      "title":"",
+      "description": "",
+      "height":750,
+      "medium": "Ceramics",
+      "url": "",
+      "img": "/assets/images/E897557C-438B-4C49-85D5-3C21026258E8.heic"
+    },
+    {
+      "id": "14",
+      "title":"",
+      "description": "",
+      "height":900,
+      "medium": "Metal Smithing",
+      "url": "",
+      "img": "/assets/images/EBED865A-4142-4707-B646-7E5177E6593D.jpeg"
+    }
+
+],
+
+"Socials": [
+    {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/ella-beardsley-661b751b6/"
+    },
+    {
+        "platform": "GitHub",
+        "url": ""
+    },
+    {
+        "platform": "Instagram",
+        "url": ""
+    },
+    {
+        "platform": "Etsy",
+        "url": ""
+    }
+]
+}
+
+
+
