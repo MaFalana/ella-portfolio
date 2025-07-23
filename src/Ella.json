@@ -1,9 +1,9 @@
 {
 "Employment": [
     {
-        "title": "Masters Level Specialist",
-        "company": "Centerstone Community Mental Health",
-        "location": "Martinsville, IN",
+        "title": "Art Therapist",
+        "company": "IU Health Methodist Hospital",
+        "location": "Indianapolis, IN",
         "startDate": "August 2025",
         "endDate": "Present",
         "alignment": "flex-start"
@@ -196,6 +196,17 @@
     {
         "platform": "Etsy",
         "url": ""
+    }
+],
+"Person": [
+    {
+        "name": "Ella Beardsley",
+        "title": "Art Therapy Intern",
+        "company": "Centerstone Community Mental Health",
+        "location": "United States",
+        "email": "elbear@iu.edu",
+        "phone": "",
+        "headshot": "/assets/Grad-6.jpeg"
     }
 ]
 }

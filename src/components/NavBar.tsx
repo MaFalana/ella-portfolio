@@ -13,6 +13,7 @@ const items = [
     { label: "Shop", href: "/shop" },
     { label: "Testimonials", href: "/testimonials" },
     { label: "Contact", href: "/contact" },
+    //{ label: "One Page Portfolio", href: "/portfolio" },
 ];
 
 

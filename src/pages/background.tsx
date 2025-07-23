@@ -17,20 +17,20 @@ import { RiH1 } from "react-icons/ri";
 
 export default function Background() {
     return (
-        <Layout>
+        <div>
             <>
                 {/* Downloadable resume */}
                 <Resume />
-                
+                <Education /> 
                 <Experience />
                 {/* Employment/Education history - Timeline component */}
                 
-                <Education /> 
+                
                 
                 {/* Certifications and relevant experiences */}
                 {/* Add more content here as needed */}
             </>
-        </Layout>
+        </div>
     );
 }
 
@@ -150,7 +150,7 @@ function Education() {
                     </Timeline.Item>
                 ))}
             </Timeline.Root>
-
+                
             {/* Composition */}
         </>
     );

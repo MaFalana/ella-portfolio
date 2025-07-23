@@ -10,15 +10,17 @@ import Layout from '@/components/Layout';
 //import Masonry from '@/blocks/Components/Masonry/Masonry';
 const Masonry = dynamic(() => import('@/blocks/Components/Masonry/Masonry'), {ssr: false,});
 import data from "@/Ella.json"
+import { useEffect, useState } from "react";
+import { GalleryInterface } from "@/managers/Models";
 
 
 export default function Gallery() {
   return (
-      <Layout>
+      <>
       
         <GalleryContent />
       
-      </Layout>
+      </>
   );
 }
 
@@ -38,6 +40,15 @@ const items = [
 ];
 
 function GalleryContent() {
+  const [items, setItems] = useState<GalleryInterface[]>([]);
+
+    useEffect(() => {
+        fetch("/api/server")
+            .then((res) => res.json())
+            .then((data) => setItems(data)) // Assuming the API returns an array of gallery items
+            .catch((err) => console.error(err));
+    }, []);
+
   return (
     <>
     <div>
@@ -47,7 +58,7 @@ function GalleryContent() {
     </div>
 
     <Masonry
-        items={data.Art}
+        items={items}
         ease="power3.out"
         duration={0.6}
         stagger={0.05}
