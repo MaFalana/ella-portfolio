@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "ella-portfolio",
+  "git": {
+    "deploymentEnabled": { "v1": true }
+  }
+}
