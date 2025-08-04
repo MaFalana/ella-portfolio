@@ -1,4 +1,5 @@
 {
+
 "Employment": [
     {
         "title": "Art Therapist",
@@ -36,18 +37,21 @@
 
 "Education": [   
     {
-      "institution": "Indiana University Indianapolis",
-      "degree": "Master of Arts - MA, Art Therapy/Therapist",
-      "startDate": "August 2023",
-      "endDate": "May 2025"
-    },
-    {
       "institution": "Indiana University Bloomington",
       "degree": "Psychology, Substance Abuse/Addiction Counseling",
       "startDate": "August 2019",
       "endDate": "May 2023"
+    },
+    {
+      
+      "institution": "Indiana University Indianapolis",
+      "degree": "Master of Arts - MA, Art Therapy/Therapist",
+      "startDate": "August 2023",
+      "endDate": "May 2025"
     }
   ],
+
+"About": "Recent Art Therapy and Mental Health Counseling graduate at Herron School of Art and Design. I have experience working with adults and children from a variety of different backgrounds. My approach combines traditional therapeutic techniques with creative expression, helping clients explore their emotions and experiences through art.",
 
 "Art": [
     {
@@ -204,8 +208,9 @@
         "title": "Art Therapy Intern",
         "company": "Centerstone Community Mental Health",
         "location": "United States",
-        "email": "elbear@iu.edu",
+        "email": "beardsleyella@gmail.com",
         "phone": "",
+        "description": "Recent Art Therapy and Mental Health Counseling graduate at Herron School of Art and Design. I have experience working with adults and children from a variety of different backgrounds. My approach combines traditional therapeutic techniques with creative expression, helping clients explore their emotions and experiences through art.",
         "headshot": "/assets/Grad-6.jpeg"
     }
 ]

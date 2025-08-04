@@ -3,7 +3,7 @@
 */
 
 import React, { useRef, useEffect, useState } from "react";
-import "./GooeyNav.css";
+import styles from "./GooeyNav.module.css";
 
 interface GooeyNavItem {
   label: string;

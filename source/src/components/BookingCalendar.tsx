@@ -57,8 +57,7 @@ export default function BookingCalendar({
     return (
       <div className="booking-calendar">
         <div className="booking-header">
-          <h3>Schedule a Session</h3>
-          <p>Book a consultation or therapy session at a time that works for you.</p>
+          
         </div>
         
         {/* Inline Calendly widget */}
@@ -83,13 +82,15 @@ export default function BookingCalendar({
           .booking-header h3 {
             margin: 0 0 0.5rem 0;
             color: #2d3748;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            font-weight: 700;
           }
 
           .booking-header p {
             margin: 0;
-            color: #718096;
-            font-size: 1rem;
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.6;
           }
 
           .calendly-inline-widget {

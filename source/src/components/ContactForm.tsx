@@ -65,7 +65,7 @@ export default function ContactForm() {
     return (
       <div className="contact-success">
         <h3>✅ Message Sent!</h3>
-        <p>Thank you for reaching out. I'll get back to you within 24-48 hours.</p>
+        <p>Thank you for reaching out. I&apos;ll get back to you within 24-48 hours.</p>
         <button 
           onClick={() => setSubmitted(false)}
           className="btn-primary"

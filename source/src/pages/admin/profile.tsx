@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import ProtectedRoute from '@/components/ProtectedRoute';
+import Layout from '@/components/Layout';
 import data from '@/Ella.json';
 
 // Default testimonials (same as in TestimonialCarousel)
@@ -39,6 +39,7 @@ interface ProfileData {
   name: string;
   title: string;
   description: string;
+  blurb: string;
   email: string;
   phone: string;
   location: string;
@@ -71,6 +72,8 @@ interface ProfileData {
 export default function AdminProfile() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [authLoading, setAuthLoading] = useState(true);
+  const [authenticated, setAuthenticated] = useState(false);
   const [profileData, setProfileData] = useState<ProfileData>({
     name: '',
     title: '',
@@ -86,8 +89,28 @@ export default function AdminProfile() {
   });
 
   useEffect(() => {
-    fetchProfile();
+    checkAuth();
   }, []);
+
+  const checkAuth = async () => {
+    try {
+      const response = await fetch('/api/auth/verify', {
+        method: 'GET',
+        credentials: 'include'
+      });
+
+      if (response.ok) {
+        setAuthenticated(true);
+        fetchProfile();
+      } else {
+        router.replace('/admin/login');
+      }
+    } catch (error) {
+      router.replace('/admin/login');
+    } finally {
+      setAuthLoading(false);
+    }
+  };
 
   const fetchProfile = async () => {
     try {
@@ -253,14 +276,28 @@ export default function AdminProfile() {
     }));
   };
 
+  if (authLoading) {
+    return (
+      <Layout>
+        <div style={{ textAlign: 'center', padding: '2rem' }}>
+          <p>Loading...</p>
+        </div>
+      </Layout>
+    );
+  }
+
+  if (!authenticated) {
+    return null; // Redirecting to login
+  }
+
   return (
-    <ProtectedRoute requireAdmin>
+    <Layout>
       <div className="admin-profile">
         {/* Header */}
         <header className="profile-header">
           <div className="header-content">
             <div className="header-left">
-              <button onClick={() => router.push('/admin')} className="back-btn">
+              <button onClick={() => router.push('/admin/dashboard')} className="back-btn">
                 ← Back to Dashboard
               </button>
               <h1>Profile Management</h1>
@@ -307,13 +344,16 @@ export default function AdminProfile() {
                 </div>
                 
                 <div className="form-group full-width">
-                  <label>About Description</label>
+                  <label>About Me Blurb/Description</label>
                   <textarea
                     value={profileData.description}
                     onChange={(e) => setProfileData(prev => ({ ...prev, description: e.target.value }))}
                     placeholder="Tell visitors about yourself and your work..."
                     rows={4}
                   />
+                  <small style={{ color: '#718096', fontSize: '0.8rem', marginTop: '0.5rem', display: 'block' }}>
+                    This text will appear in your about section and can also be managed from the dashboard quick settings.
+                  </small>
                 </div>
               </div>
             </section>
@@ -850,6 +890,6 @@ export default function AdminProfile() {
           }
         `}</style>
       </div>
-    </ProtectedRoute>
+    </Layout>
   );
 }

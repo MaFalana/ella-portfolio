@@ -18,11 +18,8 @@ export default function Footer() {
                     <div className="footer-brand">
                         <h3>{person.name}</h3>
                         <p className="footer-tagline">
-                            Art Therapist • Creative • Healer
                         </p>
                         <p className="footer-description">
-                            Combining psychology and creativity to help individuals 
-                            express themselves through therapeutic art practices.
                         </p>
                     </div>
 

@@ -3,7 +3,7 @@
 */
 
 import React, { useRef } from "react";
-import "./SpotlightCard.css";
+import styles from "./SpotlightCard.module.css";
 
 interface Position {
   x: number;
@@ -38,7 +38,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
     <div
       ref={divRef}
       onMouseMove={handleMouseMove}
-      className={`card-spotlight ${className}`}
+      className={`${styles["card-spotlight"]} ${className}`}
     >
       {children}
     </div>

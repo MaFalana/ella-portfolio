@@ -8,7 +8,7 @@ const navItems = [
     { label: "Experience", href: "#background" },
     { label: "Gallery", href: "#gallery" },
     { label: "Testimonials", href: "#testimonials" },
-    { label: "Booking", href: "#booking" },
+    { label: "Book a Session", href: "#booking" },
     { label: "Contact", href: "#contact" },
 ];
 

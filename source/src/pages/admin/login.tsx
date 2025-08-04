@@ -4,7 +4,6 @@ import Layout from '@/components/Layout';
 
 export default function AdminLogin() {
     const router = useRouter();
-    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -15,12 +14,12 @@ export default function AdminLogin() {
         setLoading(true);
 
         try {
-            const response = await fetch('/api/auth/login', {
+            const response = await fetch('/api/auth/admin-login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, password }),
+                body: JSON.stringify({ password }),
             });
 
             const data = await response.json();
@@ -29,10 +28,10 @@ export default function AdminLogin() {
                 throw new Error(data.error || 'Login failed');
             }
 
-            // Redirect to admin dashboard
+            // Redirect to admin panel
             router.push('/admin');
-        } catch (err: any) {
-            setError(err.message);
+        } catch (err) {
+            setError(err instanceof Error ? err.message : 'Login failed');
         } finally {
             setLoading(false);
         }
@@ -52,24 +51,13 @@ export default function AdminLogin() {
 
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <input
-                                type="email"
-                                id="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
-                                disabled={loading}
-                            />
-                        </div>
-
-                        <div className="form-group">
-                            <label htmlFor="password">Password</label>
+                            <label htmlFor="password">Admin Password</label>
                             <input
                                 type="password"
                                 id="password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
+                                placeholder="Enter admin password"
                                 required
                                 disabled={loading}
                             />

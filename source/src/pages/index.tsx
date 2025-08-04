@@ -116,7 +116,7 @@ export default function Home() {
             <section id="hero" className="hero-section">
                 <div className="hero-content">
                     <h1>Ella Beardsley</h1>
-                    <p>Art Therapist • Creative • Healer</p>
+                    {/*<p>Art Therapist • Creative • Healer</p> */}
                 </div>
             </section>
 
@@ -136,8 +136,7 @@ export default function Home() {
                             />
                         </div>
                         <div className="about-text">
-                            <p>Welcome to my portfolio! I&apos;m {data.Person[0].name}, an {data.Person[0].title} passionate about using art as a therapeutic medium.</p>
-                            <p>Currently working at {data.Person[0].company}, I help individuals express themselves through creative processes.</p>
+                            <p>{data.Person[0].description}</p>
                         </div>
                     </div>
                 </div>
@@ -146,7 +145,7 @@ export default function Home() {
             {/* Background Section */}
             <section id="background" className="background-section">
                 <div className="container">
-                    <h2>Professional Background</h2>
+                    <h2>Experience</h2>
                     
                     <div className="education-section">
                         <h3>Education</h3>
@@ -162,7 +161,7 @@ export default function Home() {
                     </div>
 
                     <div className="timeline-section">
-                        <h3>Work Experience</h3>
+                        <h3>Work History</h3>
                         <div className="timeline" ref={timelineRef}>
                             {data.Employment.map((job, index) => (
                                 <div key={index} className={`timeline-item ${job.alignment}`}>
@@ -182,7 +181,7 @@ export default function Home() {
             {/* Gallery Section */}
             <section id="gallery" className="gallery-section">
                 <div className="container">
-                    <h2>Art Portfolio</h2>
+                    <h2>Gallery</h2>
                     <p>Explore my creative works across various mediums</p>
                     <Masonry
                         items={galleryItems}

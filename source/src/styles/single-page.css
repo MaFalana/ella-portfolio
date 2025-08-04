@@ -6,6 +6,7 @@ section {
   padding: 80px 0;
   position: relative;
   scroll-margin-top: 80px; /* Account for fixed navbar */
+  border-bottom: 1px solid #e2e8f0; /* Faint divider line */
 }
 
 /* Ensure sections have enough content for proper detection */
@@ -84,15 +85,40 @@ section#contact {
   margin-bottom: 1rem;
 }
 
+/* About Section */
+.about-section {
+  background: white;
+  padding: 5rem 0;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+  font-weight: 700;
+}
+
+.about-section > .container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
 /* Background Section */
 .background-section {
   background: white;
+  padding: 5rem 0;
 }
 
 .background-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
+  color: #2d3748;
+  font-weight: 700;
 }
 
 .timeline-section,
@@ -155,6 +181,7 @@ section#contact {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   color: #667eea;
+  font-weight: 600;
 }
 
 .timeline-content .company {
@@ -178,9 +205,10 @@ section#contact {
 }
 
 .education-item {
-  background: #f7fafc;
+  background: white;
   padding: 2rem;
   border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   opacity: 0;
   transform: translateY(50px) scale(0.9);
@@ -191,50 +219,37 @@ section#contact {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #667eea;
+  font-weight: 600;
+}
+
+.education-item p {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
 }
 
 .education-item .dates {
   font-size: 0.9rem;
   color: #718096;
   margin-top: 0.5rem;
+  font-weight: normal;
 }
 
 /* Gallery Section */
 .gallery-section {
-  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-  padding: 100px 0 120px 0;
-  position: relative;
-  overflow: hidden;
+  background: white;
+  padding: 5rem 0;
   max-height: 100vh;
-}
-
-.gallery-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  z-index: 1;
+  overflow-y: auto;
 }
 
 .gallery-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #2d3748;
   font-weight: 700;
 }
 
-.gallery-section > .container {
-  height: calc(100vh - 200px);
-  display: flex;
-  flex-direction: column;
-}
 
 .gallery-section > .container > p {
   text-align: center;
@@ -247,40 +262,19 @@ section#contact {
   line-height: 1.6;
 }
 
-.gallery-section .list {
-  flex: 1;
-  overflow-y: auto;
-  padding-right: 10px;
-  margin-right: -10px;
-}
-
-.gallery-section .list::-webkit-scrollbar {
-  width: 8px;
-}
-
-.gallery-section .list::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-}
-
-.gallery-section .list::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border-radius: 4px;
-}
-
-.gallery-section .list::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #5a67d8, #6b46c1);
-}
 
 /* Testimonials Section */
 .testimonials-section {
   background: white;
+  padding: 5rem 0;
 }
 
 .testimonials-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #2d3748;
+  font-weight: 700;
 }
 
 .testimonials-section > .container > p {
@@ -293,21 +287,48 @@ section#contact {
 .testimonial-placeholder {
   text-align: center;
   padding: 4rem;
-  background: #f7fafc;
+  background: white;
   border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   color: #718096;
+}
+
+/* Booking Section */
+.booking-section {
+  background: white;
+  padding: 5rem 0;
+}
+
+.booking-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+  font-weight: 700;
+}
+
+.booking-section > .container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 3rem;
+  line-height: 1.6;
 }
 
 /* Contact Section */
 .contact-section {
   background: #2d3748;
   color: white;
+  padding: 5rem 0;
+  border-bottom: none; /* Remove border from last section */
 }
 
 .contact-section h2 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
+  color: white;
+  font-weight: 700;
 }
 
 .contact-content {

@@ -130,11 +130,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         await transporter.sendMail(mailOptions);
         await transporter.sendMail(autoReplyOptions);
         console.log('Emails sent successfully to:', process.env.CONTACT_EMAIL);
-      } catch (emailError: any) {
+      } catch (emailError) {
         console.error('Email sending error:', emailError);
         return res.status(500).json({ 
           error: 'Failed to send email. Please check your email configuration.',
-          details: emailError.message 
+          details: emailError instanceof Error ? emailError.message : 'Unknown error' 
         });
       }
     } else {
